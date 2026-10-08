@@ -8,3 +8,5 @@
 - [ ] Step 6G: OLTP validation checks  <-- NEXT
 - [x] Step 6G: OLTP validation (sql/dq/01_validate_oltp.sql)
 - [ ] Step 7: OLAP schemas + dim_date  <-- NEXT
+- [x] Step 6G: OLTP validation, clean state confirmed
+- [ ] Step 7: OLAP schemas + dim_date  <-- NEXT
