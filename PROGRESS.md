@@ -2,3 +2,5 @@
 - [x] Step 6D: reject handling on order_lines (05_load_order_lines.sql), tested with 4 bad rows
 - [x] Step 6E: reject handling on orders (05) and order_lines (06); sql/run_oltp.sh runner
 - [ ] Step 6F: reject handling on invoices + invoice_lines  <-- NEXT
+- [x] Step 6E: reject handling on orders + order_lines, tested and reset to clean
+- [ ] Step 6F: reject handling on invoices + invoice_lines  <-- NEXT
