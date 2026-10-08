@@ -1,0 +1,6 @@
+.env
+airflow/logs/
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+*.pyc
