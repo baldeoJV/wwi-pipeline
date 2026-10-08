@@ -9,6 +9,10 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW_CONN_WWI_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/wwi
     EVIDENCE_DIR: /opt/airflow/evidence
+    POSTGRES_USER: ${POSTGRES_USER}
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    POSTGRES_HOST: postgres
+    
   volumes:
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/scripts:/opt/airflow/scripts
