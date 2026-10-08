@@ -6,3 +6,5 @@
 - [ ] Step 6F: reject handling on invoices + invoice_lines  <-- NEXT
 - [x] Step 6F: reject handling on invoices (07) and invoice_lines (08)
 - [ ] Step 6G: OLTP validation checks  <-- NEXT
+- [x] Step 6G: OLTP validation (sql/dq/01_validate_oltp.sql)
+- [ ] Step 7: OLAP schemas + dim_date  <-- NEXT
