@@ -102,13 +102,7 @@ SELECT "OrderID"::int, "CustomerID"::int, "SalespersonPersonID"::int,
        etl.clean("PickingCompletedWhen")::timestamp
 FROM raw.orders;
 
-INSERT INTO oltp.order_lines
-SELECT "OrderLineID"::int, "OrderID"::int, "StockItemID"::int, etl.clean("Description"),
-       etl.clean("PackageTypeID")::int, "Quantity"::int,
-       REPLACE(etl.clean("UnitPrice"), ',', '.')::numeric,
-       REPLACE(etl.clean("TaxRate"), ',', '.')::numeric,
-       etl.clean("PickedQuantity")::int, etl.clean("PickingCompletedWhen")::timestamp
-FROM raw.orderlines;
+
 
 INSERT INTO oltp.invoices
 SELECT "InvoiceID"::int, "CustomerID"::int, etl.clean("BillToCustomerID")::int,

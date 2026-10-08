@@ -1,1 +1,2 @@
 - [x] Step 6C: oltp load scripted (04_load_oltp.sql, in a transaction), rebuild test passed twice
+- [x] Step 6D: reject handling on order_lines (05_load_order_lines.sql), tested with 4 bad rows
